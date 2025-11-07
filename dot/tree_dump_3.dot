@@ -1,0 +1,19 @@
+digraph Tree
+{
+	nodesep=0.8;
+	ranksep=1;
+	node [shape=record,style="rounded,filled", fillcolor=lightblue];
+	edge [arrowsize=0.8];
+	splines=ortho;	fontsize = 24;
+	label="4";
+	labelloc=t;
+
+	node0 [label = "{data = 5| {<left> left = 0x607326de3ac0|<right> right = 0x607326de3aa0} }"];
+	node1 [label = "{data = 3| {<left> left = 0x607326de3ae0|<right> right = (nil)} }"];
+	node2 [label = "{data = 1| {<left> left = (nil)|<right> right = (nil)} }"];
+	node3 [label = "{data = 10| {<left> left = (nil)|<right> right = (nil)} }"];
+	node0:<left> -> node1;
+	node1:<left> -> node2;
+	node0:<right> -> node3;
+
+}
